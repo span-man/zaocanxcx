@@ -1,0 +1,5 @@
+<!--index.wxml-->
+
+<view class='map'>
+  <navigator url='/pages/map/map'>m,ap</navigator>
+</view>

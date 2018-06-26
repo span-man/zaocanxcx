@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/map/map",
+    "pages/foods/foods",
+    "templetes/templetes",
+    "pages/index/index",
+    "pages/logs/logs",
+   
+    "pages/pay/pay"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "TF智餐",
+    "navigationBarTextStyle": "black"
+  }
+}

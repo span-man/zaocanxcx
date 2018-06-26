@@ -1,0 +1,10 @@
+<!--pages/pay/pay.wxml-->
+<view class="pay dd-column dd-h-center">
+  <view>确认支付</view>
+  <view>￥{{payData.forThePayment}}</view>
+  <view>剩余支付时间 {{payData.hour}}:{{payData.minute}}:{{payData.second}}</view>
+  <view class='dd-row dd-center'>
+    <navigator catchtap='wxPay' >微信支付</navigator>
+    <!-- <navigator>支付宝</navigator> -->
+  </view>
+</view>

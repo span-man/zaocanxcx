@@ -1,0 +1,103 @@
+<!--  机器  -->
+<template name="mechine">
+  <view class="mechineNumber dd-row dd-v-center">
+    <view class="left dd-side-r">
+      <image src="/assets/img/logo.png" alt="" />
+    </view>
+    <view class="right dd-column">
+      <view>智能早餐机 012 号</view>
+      <view class="dd-row dd-h-2side">
+        <text>月售 24</text>
+        <text>距离： 12646456km</text>
+      </view>
+      <view class="introduce">位置： 朝鲜苍术啊 阿朝鲜苍术啊 阿朝鲜苍术啊 阿朝鲜苍术啊 阿萨德按时地点</view>
+    </view>
+  </view>
+</template>
+
+<!-- number  -->
+<template name="number">
+  <view class="number dd-row">
+    <view class="minus" catchtap="minus">
+      <image src="/assets/img/minus.png" alt="-" />
+    </view>
+    <view class="num">
+      <text>1</text>
+    </view>
+    <view class="add" catchtap="add">
+      <image src="/assets/img/add.png" alt="+" />
+    </view>
+  </view>
+</template>
+
+<!--foodItem   -->
+<template name="foodItem">
+  <view class="foodItem dd-row">
+    <view class="left dd-row dd-center">
+      <image class="" src="/assets/img/logo.png" alt="具体参数" />
+    </view>
+    <view class="right dd-column">
+      <view class="dd-row dd-v-center">
+        <text>name</text>
+        <text class="stock">库存·1</text>
+      </view>
+      <view class="introduce">简介：111111</view>
+      <view class="dd-row dd-h-2side priceAndNum dd-v-center">
+        <view>￥12.12</view>
+        <template is="number"></template>
+      </view>
+    </view>
+  </view>
+</template>
+
+<!-- buycar -->
+<template name="buycar">
+  <view class="buycar dd-fixed-bottom">
+    <view class="car" wx:show="carBool">
+      <!-- 标题 和 清空 -->
+      <view class="dd-row dd-h-2side">
+        <view>
+          <text>|</text>
+          <text>商品明细</text>
+        </view>
+        <!-- <view>
+                    <span catchtap="cleanAll">清空</span>
+                </view> -->
+      </view>
+      <view class="carFor">
+        <!-- <view wx:for="(item,index) in buyCarArrs" v-bind:key="index" class="item dd-row dd-h-2side "> -->
+        <view class="item dd-row dd-h-2side ">
+          <!-- 左面的食物图 和食品名称 -->
+          <view class="dd-row dd-h-2side dd-flex1 left">
+            <view class="dd-row ">
+              <view class="foodImg">
+                <image src="/assets/img/logo.png" alt="商品图片" />
+              </view>
+              <view>name</view>
+            </view>
+            <view class="price">
+              ￥price
+            </view>
+          </view>
+          <!-- 右边的加减 数量 -->
+          <view class="number right">
+            <template is="number">
+            </template>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!-- 点出拉出层的按钮 合计钱数 去结算按钮 -->
+    <view class="dd-row dd-h-2side dd-h-center pd">
+      <view class="dd-row control">
+        <view class="controlOutLayer" catchtap="outLayer">
+          <image src="/assets/img/logo.png" alt="点出购物车弹层的按钮" />
+        </view>
+        <view class='dd-row dd-v-center' >
+            <view>合计：￥123</view>
+        </view>
+      </view>
+      <navigator catchtap="toPay" url='/pages/pay/pay?price={{213}}'>去结算</navigator>
+    </view>
+  </view>
+</template>

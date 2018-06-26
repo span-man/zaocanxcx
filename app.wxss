@@ -1,0 +1,9 @@
+/**app.wxss**/
+@import '/assets/css/dd-reset.wxss';
+@import '/assets/css/dd-init.wxss';
+
+/* 
+@import '../assets/css/dd-reset.wxss';
+@import '../assets/css/dd-init.wxss'; */
+
+

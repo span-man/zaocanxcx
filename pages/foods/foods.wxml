@@ -1,0 +1,18 @@
+<!--pages/foods/foods.wxml-->
+<import src="../../templetes/templetes.wxml" />
+
+<view class="foods">
+  <view class="head">
+    <template is="mechine">
+    </template>
+  </view>
+  <view class="body">
+    <template is="foodItem">
+    </template>    <template is="foodItem">
+    </template>
+  </view>
+  <view class="foot">
+    <template is="buycar"  >
+    </template>
+  </view>
+</view>
