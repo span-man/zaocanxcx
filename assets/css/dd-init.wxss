@@ -27,7 +27,6 @@
   flex-direction: row;
 }
 
-t
 
 .dd-column {
   display: flex;
@@ -92,6 +91,15 @@ t
 .dd-flex1 {
   flex: 1;
 }
+/* 块元素化 */
+.dd-db{
+    display: block;
+}
+/* input 样式 */
+.dd-input{
+    min-width: 200pt;
+    min-height:28pt ;
+}
 
 /* 省略多余的文字 */
 
@@ -111,10 +119,54 @@ t
   right: 0;
   background: rgba(0, 0, 0, 0.3);
 }
-
-/* btn  */
-
-.dd-btn-yellow {
+/* dd-btn 按钮样式 注意：root 在小程序里还用不了 */
+:root{
+    --btn-padding:3pt 13pt;
+}
+.dd-btn-red{
+    outline: none;
+    border: 1px solid transparent;
+    cursor: pointer;
+    background-color: #c82333;
+    color: white;
+    font-size: 12pt;
+    font-weight: 400;
+    text-align: center;
+    padding: var(--btn-padding);
+}
+.dd-btn-red:hover{
+    background-color: #b11f2d;    
+}
+.dd-btn-ccc{
+    outline: none;
+    border: 1px solid transparent;
+    cursor: pointer;
+    background-color: #ccc;
+    color: #000;
+    font-size: 12pt;
+    font-weight: 400;
+    text-align: center;
+    padding: var(--btn-padding);
+}
+.dd-btn-ccc:hover{
+    background-color: rgb(161, 160, 160);
+}
+.dd-btn-yellow{
+    outline: none;
+    border: 1px solid transparent;
+    cursor: pointer;
+    background-color: rgb(228, 228, 44);
+    color: #000000;
+    font-size: 12pt;
+    font-weight: 400;
+    text-align: center;
+    padding: var(--btn-padding);
+}
+.dd-btn-yellow:hover{
+    background-color: #97a834;
+}
+/* 圆角btn */
+.dd-btn-yellow-c {
   border: 1pt solid transparent;
   width: 200pt;
   height: 26pt;
@@ -128,8 +180,13 @@ t
   font-size: 12pt;
   box-shadow: 0 0 5pt #ccc;
 }
+
+/* color */
 /* 常用颜色 */
 .dd-c_o{
   color: orange;
 }
+
+
+
 /* end init */
