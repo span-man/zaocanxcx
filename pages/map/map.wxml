@@ -6,3 +6,6 @@ longitude ="{{longitude}}"
 controls="{{controls}}" show-location bindregionchange="regionchange" style="width: 100%; height: {{view.Height}}px;" 
 
 ></map>
+
+<navigator class='sideBar-l' url='/pages/my/my'>我的</navigator>
+<navigator class='sideBar-r' url='/pages/my/my'>我的</navigator>

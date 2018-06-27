@@ -93,11 +93,31 @@
         <view class="controlOutLayer" catchtap="outLayer">
           <image src="/assets/img/logo.png" alt="点出购物车弹层的按钮" />
         </view>
-        <view class='dd-row dd-v-center' >
-            <view>合计：￥123</view>
+        <view class='dd-row dd-v-center'>
+          <view>合计：￥123</view>
         </view>
       </view>
       <navigator catchtap="toPay" url='/pages/pay/pay?price={{213}}'>去结算</navigator>
     </view>
   </view>
 </template>
+
+<!--itemLink 我的 里面的每个链接  -->
+<template name="itemLink">
+  <navigator class="itemLink dd-row dd-h-2side dd-v-center" url='{{item.link}}'>
+    <view class="iconAndT dd-row">
+      <view class="icon">
+        <image src="/assets/img/logo.png" alt="icon" />
+      </view>
+      <view class="title">{{item.title}}</view>
+    </view>
+    <view class="introAndI dd-row">
+      <view>{{item.intro}}</view>
+      <view class="icon">
+        <image src="/assets/img/right.png" alt="icon" />
+      </view>
+    </view>
+  </navigator>
+
+</template>
+

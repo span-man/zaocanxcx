@@ -1,0 +1,26 @@
+<!--pages/my/myOrder/myOrder.wxml-->
+<import src="../../../templates/goodsItem.wxml" />
+<view class="title dd-fixed-top">
+  <text class='shu'>| </text> 我的订单</view>
+<view class="title"></view>
+<block wx:for="{{myOrderData}}" wx:for-item="orderItem">
+
+  <view class="dd-column orderItems">
+    <view class="head dd-row dd-h-2side">
+      <view class='dataTime'>{{orderItem.dateTime}}</view>
+      <view class='status'>{{orderItem.status}}</view>
+    </view>
+    <!--左边 和 右边 价钱  -->
+    <view class="dd-row dd-h-2side dd-v-center orderItem" wx:for="{{orderItem.goods}}" wx:for-item="item2">
+      <template is="goodsItem" data="{{item2}}" />
+    </view>
+    <view class="dd-row dd-h-right">
+      <view class="checkTheDetails" data-d='{{orderItem}}' catchtap="checkTheDetails">查看详情</view>
+    </view>
+  </view>
+
+</block>
+<view style='height:40pt;'></view>
+
+
+

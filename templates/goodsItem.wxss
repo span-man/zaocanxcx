@@ -1,0 +1,61 @@
+
+page{
+  background-color: #f1f1f1;
+}
+.title{
+  padding: 4pt 0 2pt 0;
+  height: 20pt;
+  background: #f1f1f1;
+}
+.shu{
+color: orange;
+font-weight: bold;
+}
+.orderItems{
+  margin: 5pt 3pt;
+  padding: 4pt 10pt;
+  background-color: #fff;
+  border-radius: 4pt;
+  box-sizing: 0 0 5pt #ccc;
+}
+.orderItems .head{
+  margin: 2pt 0 10pt 0;
+}
+.orderItems .head .dataTime{
+  font-size: 10pt;
+}
+.status{
+  font-size:11pt;
+}
+
+.orderItem {
+  margin: 2pt 0;
+  font-size: 10pt;
+}
+.orderItem .leftAndNum{
+  width: 200pt;
+}
+
+.orderItem .img {
+  width: 36pt;
+  height: 36pt;
+}
+.orderItem .img > image {
+  width: 36pt;
+  height: 36pt;  border-radius: 4pt;
+  box-shadow: 0 0 5pt #ccc;
+}
+.orderItem .goodsName{
+  margin-left: 4pt;
+  font-size: 12pt;
+  font-weight: bold;
+}
+
+.orderItem .num{
+}
+/* 查看详情 */
+.checkTheDetails{
+  border-radius: 15pt;
+  border: 1pt solid #f1f1f1;
+  font-size: 10pt;padding: 2pt 6pt;
+}

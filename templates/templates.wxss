@@ -1,40 +1,31 @@
 /* templetes/templetes.wxss */
-
-:root {
-  --basic-color: #f8c700; /* 基本色 */
-  --foodImg-width: 20pt; /* 食物图片的 宽 */
-  --foodImg-height: 20pt; /* 食物图片的 高 */
-  --number-width: 100pt; /* 数量调节模块的 宽度 */
-  --number-height: 20pt; /* 数量调节模块的 高度 */
-  --buyCar-item-height: 30pt; /* 购物车 item 模块的 高度 */
-  --buyCar-outLayer-background: #ccc; /* 购物车 弹出 模块的 背景色 */
-}
-
 /* mechine  */
+
 .mechineNumber {
   z-index: 100;
   background: #000;
 }
+
 .left {
-    flex: 1;
+  flex: 1;
 }
+
 .left image {
   width: 20pt;
   height: 20pt;
 }
-.right{
-    width: 250pt;
-    color: #fff;
-    font-size: 12pt;
-}
-.right .introduce{
 
+.right {
+  width: 250pt;
+  color: #fff;
+  font-size: 12pt;
+}
+
+.right .introduce {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-
 }
-
 
 /* foodItem */
 
@@ -43,19 +34,23 @@
   background: #ccc;
   margin: 5pt 0;
 }
+
 .foodItem .left {
   /* width: 60pt; */
   flex: 1;
 }
+
 .foodItem .left img {
   width: 50pt;
   height: 50pt;
 }
+
 .foodItem .right {
   margin-left: 5pt;
   color: #fff;
   font-size: 12pt;
 }
+
 .foodItem .right .introduce {
   width: 250pt;
   overflow: hidden;
@@ -64,6 +59,7 @@
 }
 
 /* 库存 */
+
 .foodItem .stock {
   margin-left: 10pt;
   border-radius: 5pt 5pt 5pt 0;
@@ -74,29 +70,35 @@
   height: 14pt;
   line-height: 14pt;
 }
+
 /* 价钱 和 num  */
-.priceAndNum{
+
+.priceAndNum {
   /* background: red; */
 }
 
 /* number  */
+
 .number {
   justify-content: flex-end;
-  background: #cccccc;
+  background: #ccc;
   width: 100pt;
   height: 20pt;
 }
+
 .number > view {
   flex: 1;
 }
+
 .number .num {
   align-items: center;
   align-self: center;
   text-align: center;
 }
+
 /* 加减 */
-.add,
-.minus {
+
+.add, .minus {
   width: 8pt;
   height: 8pt;
   display: flex;
@@ -105,8 +107,7 @@
   justify-content: center;
 }
 
-.add image,
-.minus image {
+.add image, .minus image {
   width: 8pt;
   height: 8pt;
 }
@@ -117,16 +118,20 @@
   width: 20pt;
   height: 20pt;
 }
+
 .foodImg > image {
   width: 20pt;
   height: 20pt;
 }
+
 /* 购物车里的每行元素 */
+
 .car {
   background: #ccc;
   padding: 5pt;
   border-radius: 4pt 4pt 0 0;
 }
+
 .car .item {
   height: 30pt;
   display: flex;
@@ -139,22 +144,49 @@
 }
 
 /* 最下面的控制弹出层的显示与隐藏 */
+
 .control {
   background: #f1f1f1;
 }
+
 .control .controlOutLayer {
   height: 25pt;
   width: 60pt;
   transform: translateY(-8pt);
 }
+
 .control .controlOutLayer image {
   height: 25pt;
   width: 60pt;
 }
+
 /* 食物的具体 */
+
 .carFor {
   height: 90pt;
   overflow-x: hidden;
-  overflow-y: scroll; /* 隐藏滚动条必备 条件 */
-  /* margin-right: -20pt;  隐藏滚动条  */
+  overflow-y: scroll; /* 隐藏滚动条必备 条件 *//* margin-right: -20pt;  隐藏滚动条  */
+}
+
+/* itemLink  */
+
+.itemLink {
+  width: 100%;
+  height: 30pt;
+  margin-bottom: 1pt;
+  
+  box-sizing: border-box;
+}
+.itemLink .iconAndT {
+}
+.itemLink .introAndI {
+}
+.itemLink .icon {
+  width: 8pt;
+  height: 8pt;
+}
+
+.itemLink .icon>image {
+  width: 8pt;
+  height: 8pt;
 }

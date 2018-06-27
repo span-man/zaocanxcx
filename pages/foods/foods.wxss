@@ -1,3 +1,3 @@
 /* pages/foods/foods.wxss */
-@import '../../templetes/templetes.wxss';
+@import '../../templates/templates.wxss';
 

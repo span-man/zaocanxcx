@@ -1,5 +1,5 @@
 <!--pages/foods/foods.wxml-->
-<import src="../../templetes/templetes.wxml" />
+<import src="../../templates/templates.wxml" />
 
 <view class="foods">
   <view class="head">

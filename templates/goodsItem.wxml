@@ -1,0 +1,23 @@
+
+
+
+<template name="goodsItem">
+
+  <!--左边和 右边 个数  -->
+  <view class="leftAndNum dd-row dd-h-2side dd-v-center">
+    <!--左边和 右边 菜名  -->
+    <view class="dd-row dd-h-2side dd-v-center">
+      <!--左边 菜的图片  -->
+      <view class='img'>
+        <image src="{{item2.pic}}" alt="" />
+      </view>
+      <!--菜的名字  -->
+      <view class='goodsName'>{{item2.name}}</view>
+    </view>
+    <!--菜的个数  -->
+    <view class="num">X {{item2.num}}</view>
+  </view>
+  <!--菜的价钱  -->
+  <view class="price">￥{{item2.price}}</view>
+
+</template>

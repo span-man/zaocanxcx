@@ -1,0 +1,67 @@
+/* pages/my/myOrder/myOrderDetails/myOrderDetails.wxss */
+@import "../../../../templates/goodsItem.wxss";
+
+/*标题  */
+
+.title {
+  margin-top: 12pt;
+}
+
+.title2 {
+  font-size: 11pt;
+  font-weight: bold;
+  margin: 0 0 5pt 0;
+}
+
+.item {
+  font-size: 10pt;
+  padding: 8pt 10pt;
+}
+
+.money {
+  font-weight: blod;
+}
+
+/*立即支付  */
+
+.topay {
+  margin-top: 20pt;
+}
+
+/*取消订单  */
+
+.cancelPay {
+  margin: 10pt;
+  font-size: 10pt;
+}
+
+/* 已经退款  */
+
+.havePayBack {
+  color: #ccc;
+}
+
+/* 已完成 没评价  */
+
+.star {
+}
+
+.star .starImg {
+  height: 24pt;
+  width: 24pt;
+  margin: 0 4pt;
+}
+
+.star .starImg image {
+  height: 24pt;
+  width: 24pt;
+}
+/* 评论文本框  */
+.ta{
+  margin: 10pt auto;
+  padding: 5pt 3pt;
+  border-radius: 4pt;
+  box-shadow: 0 0 5pt red;
+  width: 250pt;
+  background: #fff;
+}

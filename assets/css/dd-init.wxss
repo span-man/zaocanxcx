@@ -1,76 +1,135 @@
-
-
 /* init */
-.dd-clear { zoom:1; }
-.dd-clear:after { content:''; display:block; clear:both; }
-.dd-fl { float:left; }
-.dd-fr { float:right; }
-.dd-db{
-    display: block;
+
+.dd-clear {
+  zoom: 1;
 }
 
-.dd-row{
-    display: flex;
-    flex-direction: row;
-}t
+.dd-clear:after {
+  content: '';
+  display: block;
+  clear: both;
+}
 
-.dd-column{
-    display: flex;
-    flex-direction: column;
+.dd-fl {
+  float: left;
+}
+
+.dd-fr {
+  float: right;
+}
+
+.dd-db {
+  display: block;
+}
+
+.dd-row {
+  display: flex;
+  flex-direction: row;
+}
+
+t
+
+.dd-column {
+  display: flex;
+  flex-direction: column;
 }
 
 /*固定到底部  */
-.dd-fixed-bottom{
-    position: fixed;
-    bottom: 0;
-    width: 100%
+
+.dd-fixed-bottom {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
+
 /*固定到顶部  */
-.dd-fixed-top{
-    position: fixed;
-    top: 0;
-    width: 100%
+
+.dd-fixed-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
+
 /* flex水平居中同时垂直居中 */
-.dd-center{
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+
+.dd-center {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
+
+.dd-text-center {
+  text-align: center;
+}
+
 /* 水平居中 */
-.dd-h-center{
-    justify-content: center;
-    text-align: center;
+
+.dd-h-center {
+  justify-content: center;
+  text-align: center;
 }
+
 /* 垂直居中 */
-.dd-v-center{
-    align-items: center;
+
+.dd-v-center {
+  align-items: center;
 }
+
 /* 一个内部元素 水平靠右边 */
-.dd-h-right{
-    justify-content: flex-end;
+
+.dd-h-right {
+  justify-content: flex-end;
 }
+
 /* 两个内部元素 靠在两边 */
-.dd-h-2side{
-    justify-content: space-between;
+
+.dd-h-2side {
+  justify-content: space-between;
 }
+
 /* 另一边宽度固定后， 这边宽度自适应  */
-.dd-flex1{
-    flex: 1;
+
+.dd-flex1 {
+  flex: 1;
 }
+
 /* 省略多余的文字 */
-.dd-ellipsis{
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+
+.dd-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
+
 /* 全屏显示 */
-.full-screen{
-    position: fixed;
-    top:0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: rgba(0,0,0,0.3);
+
+.full-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* btn  */
+
+.dd-btn-yellow {
+  border: 1pt solid transparent;
+  width: 200pt;
+  height: 26pt;
+  background: #e2ca2e;
+  border-radius: 20pt;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  font-size: 12pt;
+  box-shadow: 0 0 5pt #ccc;
+}
+/* 常用颜色 */
+.dd-c_o{
+  color: orange;
 }
 /* end init */

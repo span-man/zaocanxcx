@@ -1,0 +1,33 @@
+/* pages/my/my.wxss */
+
+/*my 我的页面 */
+
+.head > .pic {
+  background: #fff;
+  margin: 10pt;
+}
+
+.head > .pic > image {
+  width: 100pt;
+  height: 100pt;
+  border-radius: 60pt;
+  background: #ccc;
+}
+
+.head > .phone {
+  background: pink;
+}
+
+.body{
+  padding:0pt 10pt;
+  background: #f1f1f1;
+}
+.body navigator{
+  border-bottom: 1pt solid #fff;
+}
+.body navigator:last-child{
+  border-bottom: 0;
+}
+
+/*itemLink  */
+@import '../../templates/templates.wxss'

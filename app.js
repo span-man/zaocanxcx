@@ -35,6 +35,7 @@ App({
   },
   globalData: {
     userInfo: null,
-    domain: 'http://localhost:8888/'
+    domain: 'http://localhost:8888/',
+    tempDataFromMyOrderToDetail:null,
   }
 })

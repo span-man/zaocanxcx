@@ -1,1 +1,32 @@
 /* pages/map/map.wxss */
+
+.sideBar-l {
+  position: fixed;
+  width: 40pt;
+  height: 20pt;
+  background: #fff;
+  border: 1px solid transparent;
+  bottom: 34pt;
+  z-index: 99;
+  left: 0;
+  text-align: center;
+  line-height: 20pt;
+  font-size: 12pt;
+  border-radius:0 20pt 20pt 0;
+  box-shadow: 0 0 5pt #ccc;
+}
+
+.sideBar-r {
+  position: fixed;
+  width: 40pt;
+  height: 20pt;
+  background: #fff;
+  border: 1px solid transparent;
+  bottom: 34pt;
+  z-index: 99;
+  right: 0;
+  text-align: center;
+  line-height: 20pt; font-size: 12pt;
+  border-radius:20pt 0 0 20pt;
+  box-shadow: 0 0 5pt #ccc;
+}

@@ -1,12 +1,14 @@
 {
   "pages": [
+    "pages/my/myOrder/myOrder",
+    "pages/my/my",
     "pages/map/map",
     "pages/foods/foods",
-    "templetes/templetes",
+    "templates/templates",
     "pages/index/index",
     "pages/logs/logs",
-   
-    "pages/pay/pay"
+    "pages/pay/pay",
+    "pages/my/myOrder/myOrderDetails/myOrderDetails"
   ],
   "window": {
     "backgroundTextStyle": "light",

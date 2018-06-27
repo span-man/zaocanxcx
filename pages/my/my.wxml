@@ -1,0 +1,20 @@
+<!--pages/my/my.wxml-->
+<import src="../../templates/templates.wxml" />
+ <view class="my">
+        <view class="head dd-column ">
+            <view class="pic dd-row dd-center" >
+                <image src="/assets/img/logo.png" alt="" />      
+            </view>
+            <view class="phone dd-row dd-center">15809181640</view>
+        </view>
+        <view class="body">
+        <block wx:for="{{dataArray}}" wx:for-item="item" wx:key="item" >
+              <template is="itemLink" data="{{item}}" />
+        </block>
+            
+        </view>
+        <!-- 根据登陆状态显示不同文字 -->
+        <view class="dd-row dd-center dd-fixed-bottom">
+          <view class="btn btn-danger ">切换账号 / 登陆</view>
+        </view>
+    </view>

@@ -1,0 +1,91 @@
+<!--pages/my/myOrder/myOrderDetails/myOrderDetails.wxml-->
+
+<import src="../../../../templates/goodsItem.wxml" />
+
+
+
+<template name="content">
+  <view class='dd-column'>
+    <view class='item'>
+      <view class='title2'>
+        <text class='dd-c_o'>| </text> 商品明细
+      </view>
+      <view class="dd-row dd-h-2side dd-v-center orderItem" wx:for="{{detailsData.goods}}" wx:for-item="item2">
+        <template is="goodsItem" data="{{item2}}" />
+      </view>
+    </view>
+
+    <view class='item' wx:for="{{goodsTAndList}}" wx:for-item="item">
+      <!-- <template is="goodsTAndList" data="{{item}} "/>  -->
+      <!--  折扣 积分信息  -->
+      <view class="dd-row dd-h-2side">
+        <view>{{item.title}}</view>
+        <view>
+          <text></text>{{item.message}}</view>
+      </view>
+    </view>
+
+  </view>
+</template>
+
+<!--待支付  -->
+<!-- <template name="goodsTAndList">
+  <view class="dd-row dd-h-2side">
+    <view>{{item.title}}</view>
+    <view>
+      <text></text>{{item.message}}</view>
+  </view>
+</template> -->
+<view class='dd-column' wx:if="{{0==-1}}">
+  <view class='title dd-center'>待支付</view>
+
+  <template wx:if="0==-1" is="content" data="{{detailsData,goodsTAndList}}" />
+
+  <view class='item dd-row dd-h-center topay'>
+    <view class='dd-btn-yellow' catchtap='topay'>立即支付</view>
+  </view>
+  <view catchtap='cancelPay' class='dd-text-center cancelPay'>
+    取消订单
+  </view>
+</view>
+
+
+
+<!-- 已退款  -->
+
+<view class='dd-column' wx:if="{{1==-1}}">
+  <view class='title havePayBack dd-center'>已退款</view>
+
+  <template wx:if="0==-1" is="content" data="{{detailsData,goodsTAndList}}" />
+
+</view>
+
+
+
+
+
+<!-- 已完成  -->
+
+<view class='dd-column'>
+  <view class='title haveDown dd-center'>已完成</view>
+
+  <template is="content" data="{{detailsData,goodsTAndList}}" />
+  <!-- 评价订单  -->
+  <view class='item'>
+    <view class='title2'>
+      <text class='dd-c_o'>| </text>评价订单
+    </view>
+    <view class='star dd-row dd-h-center'>
+      <block wx:for="{{stars}}" wx:for-item="starItem" wx:for-index="starIndex">
+        <view class='starImg' catchtap='checkStar' data-i='{{starIndex}}'>
+          <image src='{{starItem==1 ? "/assets/img/stary.png" : "/assets/img/starc.png"}}'></image>
+        </view>
+      </block>
+    </view>
+    <textarea class="ta" placeholder='随便评论，展示你绝妙的文笔'></textarea>
+    <view class='dd-row dd-center'>
+      <view class='dd-btn-yellow'>提 交</view>
+    </view>
+    <view style='height:40pt;'></view>
+  </view>
+</view>

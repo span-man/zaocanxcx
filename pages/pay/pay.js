@@ -71,5 +71,14 @@ Page({
     //substr(-2)   从倒数第二个数字开始截取
     let newStr = ("0" + _arg).substr(-2);
     return newStr;
+  },
+  wxPay(){
+    wx.requestPayment({
+      timeStamp: '',
+      nonceStr: '',
+      package: '',
+      signType: '',
+      paySign: '',
+    })
   }
 })
